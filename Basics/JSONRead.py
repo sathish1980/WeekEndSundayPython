@@ -32,8 +32,6 @@ class JsonREad:
                 for each in data[eachvalue]:
                     print(each)
         print(data)
-
-
         for eachvalue in data['Hotels']:
             print(eachvalue)
 
@@ -49,6 +47,6 @@ class JsonREad:
             json.dump(person_dict, json_file)
 
 obj=JsonREad()
-#obj.JSONReadData()
+obj.JSONReadData()
 obj.REadJsonFromFile()
-#obj.WriteJsonFile()
+obj.WriteJsonFile()
