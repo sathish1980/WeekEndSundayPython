@@ -1,0 +1,6 @@
+
+{"name": "Bob",
+"languages": ["English", "French"],
+"Hotels": ["A2b","SVB","BVK"],
+"A2b": ["Idly","Sambar","Poori"]
+}
