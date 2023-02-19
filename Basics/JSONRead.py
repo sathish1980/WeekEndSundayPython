@@ -45,6 +45,9 @@ class JsonREad:
 
         with open('person.txt', 'w') as json_file:
             json.dump(person_dict, json_file)
+        
+    def GitBrachconcept(self):
+        print("Branconcept")
 
 obj=JsonREad()
 obj.JSONReadData()
