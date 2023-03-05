@@ -46,6 +46,9 @@ class JsonREad:
         with open('person.txt', 'w') as json_file:
             json.dump(person_dict, json_file)
 
+    def change(self):
+        print("newchange")
+
 obj=JsonREad()
 obj.JSONReadData()
 obj.REadJsonFromFile()
