@@ -49,6 +49,9 @@ class JsonREad:
     def GitBrachconcept(self):
         print("Branconcept")
 
+    def change(self):
+        print("newchange")
+
 obj=JsonREad()
 obj.JSONReadData()
 obj.REadJsonFromFile()
