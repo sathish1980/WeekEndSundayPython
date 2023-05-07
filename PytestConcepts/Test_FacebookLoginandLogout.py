@@ -16,12 +16,12 @@ class Test_FacebookloginandLogout(ElementDriver):
         print(self.driver.title)
 
     def test_FacebookValidLoginandLogout(self,fbloginvaliddataFromExecl):
-        #self.driver.find_element(by=By.ID, value="email").send_keys("kumar.sathish189@gmail.com")
+        #self.driver.find_element(by=By.ID, value="email").send_keys("kcom")
 
-        #self.driver.find_element(by=By.ID, value="pass").send_keys("Admin@123")
+        #self.driver.find_element(by=By.ID, value="pass").send_keys("3434123")
 
-        # self.driver.find_element(by=By.ID, value="email").send_keys("kumar.sathish189@gmail.com")
-        # self.driver.find_element(by=By.ID, value="pass").send_keys("Admin@123")
+        # self.driver.find_element(by=By.ID, value="email").send_keys("kum")
+        # self.driver.find_element(by=By.ID, value="pass").send_keys("@123")
         #self.driver.find_element(by=By.NAME, value="login").click()
         #TextboxWebElement = self.driver.find_element(by=By.ID, value="email")
         size = len(Testdata.credential_excel_dic[0])
@@ -36,7 +36,7 @@ class Test_FacebookloginandLogout(ElementDriver):
             LoginPage.EnterPassword(fbloginvaliddataFromExecl["password"+str(i)])
             LoginPage.ClickLoginButton()
            # passwordElement = self.driver.find_element(by=By.ID, value="pass")
-            #self.EnterTextInToTextBox(self.driver.find_element(by=By.ID, value="pass"), "Admin@123")
+            #self.EnterTextInToTextBox(self.driver.find_element(by=By.ID, value="pass"), "123")
             #loginButton = self.driver.find_element(by=By.NAME, value="login")
             #self.CLickOnButton(self.driver.find_element(by=By.NAME, value="login"))
             time.sleep(5)
@@ -49,9 +49,6 @@ class Test_FacebookloginandLogout(ElementDriver):
 
     def test_FacebookinValidLogin(self):
         self.driver.find_element(by=By.ID, value="email").send_keys("23342312323")
-        #self.driver.find_element(by=By.ID, value="pass").send_keys("Admin@123")
-        # self.driver.find_element(by=By.ID, value="email").send_keys("kumar.sathish189@gmail.com")
-        # self.driver.find_element(by=By.ID, value="pass").send_keys("Admin@123")
         self.driver.find_element(by=By.NAME, value="login").click()
         time.sleep(5)
         errorMessage = self.driver.find_element(by=By.XPATH,value="//*[@id='email_container']//div[2]").text
